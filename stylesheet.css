@@ -1,6 +1,12 @@
 @CHARSET "ISO-8859-1";
 
-html {background-color: #e5c4a6 ;}
+html {background-color: black;
+        background-image: url("lucio.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+}
 
 body {background-color: #fbf7cb ;
       width: 80%;
