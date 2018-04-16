@@ -1,0 +1,66 @@
+@CHARSET "ISO-8859-1";
+
+html {background-color: #e5c4a6 ;}
+
+body {background-color: #fbf7cb ;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0px;
+    }
+    
+#navbar {background-color: rgb(160,120,100);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 0px 0px 0px;
+        display: table;
+
+    }
+
+#content {background-color: #fbf7cb;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.2px;
+}
+
+#header {background-color: rgb(160,120,120);
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#pictures {background-color: rgb(0,0,0,);
+            width:100%;
+            margin-left: auto;
+            margin-right: auto;
+}
+
+#footer {background-color: rgb(160,120,120);
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: bottom;
+}
+
+#leave {vertical-align:middle;
+        float: left;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+}
+
+#navbar li {display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            float: left;
+            width: 25%;
+}
+
+#navbar li:hover {background-color:rgb(0,0,0,);}
+
+#navbar a:link {color: #ffffff;
+                text-decoration: none
+}
