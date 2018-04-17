@@ -218,13 +218,33 @@ document.write(myFunction(1,2,3))
 </b></p>
 
 <script>
-    function Whatisage(){
-        getElementById(person.age)
-        if (person.age=20) 
-            document.write("True");
-        
-    
-        else document.write("False");
+if (person.age >=20, person.age<=40){
+    document.write("True");
+} else {
+    document.write("False");
+}
+</script>
+
+<br><br><br>
+
+
+<h2>
+    Iteration 1
+</h2>
+
+<p><b>
+    Create a 'for' loop that increments from 1 to 10, outputting the current iteration at
+    each step
+</b></p>
+
+<script>
+    var g
+    var inc = [0,1,2,3,4,5,6,7,8,9];
+    var text = "";
+    for (g=1; g >= 1; g++) {
+        text += "Current iteration:" + g + "<br>";
     }
+
+    document.write(g);
 </script>
 </html>
