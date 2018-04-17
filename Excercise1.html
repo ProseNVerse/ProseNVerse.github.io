@@ -1,6 +1,11 @@
 <!doctype HTML>
 
 <html>
+    <style></style>
+
+    <div>
+        <a href='projects.html'></a>
+    </div>
 
 <h1> Excercise 1: Creating a Script</h1>
 
@@ -75,6 +80,13 @@ document.write(myFunction(1,2,3))
             
         };
 
+        var person2 = {
+            person2.name = document.getElementById("name").value;
+            person2.age = document.getElementById("age").value;
+            person2.occupation = document.getElementById("job").value;
+
+        }
+
         function NewFunction(a)
         {return person.name+ " is " + 
         person.age + " and works as a " + 
@@ -101,11 +113,12 @@ document.write(myFunction(1,2,3))
     </p>
     <br><br>
     <form>
-        Name: <input type="text"><br>
-        Age: <input type="text"><br>
-        Occupation: <input type="text"><br>
-        <input type="submit" value="Submit">
+        Name: <input id="name" type="text"><br>
+        Age: <input id="age" type="text"><br>
+        Occupation: <input id="job" type="text"><br>
     </form>
-    <script>
 
+    <button type="button"
+    onclick=alert(person2)>Submit</button>
+   
 </html>

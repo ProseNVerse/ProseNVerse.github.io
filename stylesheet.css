@@ -21,7 +21,7 @@ color:#FFFFFF;
         display:table-cell;
         text-align: center;
         vertical-align: middle;
-        float: left;
+        float: middle;
         width: 10%;
         border: 1px solid powderblue;
 }
@@ -59,7 +59,7 @@ text-decoration: aqua}
         vertical-align: middle;
         float: middle;
         background-color: #979797;
-        width: 33%;
+        width: 33%; 
 }
 
 #footer {
@@ -69,4 +69,13 @@ text-decoration: aqua}
         vertical-align: right;
         float: end;
         position: static;
+}
+
+#projectlists th {
+        border: 3px solid #ffffff;
+       
+}
+
+#projectlists td {border: 1px solid #ffffff;
+
 }
