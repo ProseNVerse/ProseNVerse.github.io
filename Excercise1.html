@@ -1,0 +1,87 @@
+<!doctype HTML>
+
+<html>
+
+<h1> Excercise 1: Creating a Script</h1>
+
+<p>Creating an alert for "Hello World"</p>
+<script>
+    alert("Hello World!");
+</script>
+
+<p>Creating Variables and displaying them in console, alerts, and in the document</p>
+
+<script>
+    var x = 5
+
+    alert(x);
+    console.log(x);
+    document.write(x);
+</script>
+
+
+
+<p>Function 1</p>
+<script>
+var y = myFunction(2);
+
+function myFunction(a) {
+    return a*a;
+}
+document.write(myFunction(2))
+
+</script>
+
+<p>Function 2</p>
+<script>
+var a = myFunction(1,2,3);
+
+function myFunction (a,b,c) {
+    return a + b + c;
+}
+
+document.write(myFunction(1,2,3))
+</script>
+
+
+<h1>
+    Excercise 2: Variable Input
+</h1>
+<p>
+    Creating a Person Object
+</p>
+<script>
+
+    var person = {
+        name:"Charles",
+        age:22,
+        occupation:"Software Tester"
+    };
+
+    document.write(person.name)
+    document.write(person.age)
+    document.write(person.occupation)
+
+</script>
+
+<p>Editing, then outputting</p>
+
+<script>
+
+        var person = {
+            name:"Charles",
+            age:22,
+            occupation:"Software Tester"
+            
+        };
+
+        function NewFunction(a)
+        {return person.name+ " is " + 
+        person.age + " and works as a " + 
+        person.occupation};
+
+        document.write(NewFunction(a))
+    
+    </script>
+
+</html>
