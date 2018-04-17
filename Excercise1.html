@@ -80,12 +80,7 @@ document.write(myFunction(1,2,3))
             
         };
 
-        var person2 = {
-            person2.name = document.getElementById("name").value;
-            person2.age = document.getElementById("age").value;
-            person2.occupation = document.getElementById("job").value;
-
-        }
+       
 
         function NewFunction(a)
         {return person.name+ " is " + 
@@ -112,13 +107,28 @@ document.write(myFunction(1,2,3))
         Creating text boxes to create a new Person Object with the same categories as used previously, output the person, and edit.
     </p>
     <br><br>
-    <form>
+    <form id="newperson">
         Name: <input id="name" type="text"><br>
         Age: <input id="age" type="text"><br>
-        Occupation: <input id="job" type="text"><br>
+        Occupation: <input id="occupation" type="text"><br>
     </form>
 
-    <button type="button"
-    onclick=alert(person2)>Submit</button>
-   
+    
+<script>
+    var person2 = {
+        FormData.name = document.getElementById("name").value;
+        FormData.age = document.getElementById("age").value;
+        FormData.occupation = document.getElementById("job").value;
+
+    function NewChar(){
+        return "New person " + (person2.name) + " has been added. " + "They are "
+         + (person2.age) + " years old and" +
+        " work as a " + (person2.occupation)
+    }
+
+    }
+   </script>
+
+   <button type="button"
+   onclick=alert(NewChar())>Submit</button>
 </html>
