@@ -23,7 +23,24 @@ color:#FFFFFF;
         width: 25%;
 }
 
-#navigation li:hover {background-color: #8d55005e;
+#navigation li:hover {background-color: #1b1000bd;
         text-decoration: none;
 
 }
+
+#nameplate {padding: 5px;
+color: #ffffff;
+vertical-align: middle;
+text-align: center;
+}
+
+#info {padding: 5px;
+}
+
+#info li {display:table;
+text-align: center;
+vertical-align: middle;
+float: middle;
+width: 33.3333px;}
+
+#info li:hover {background-color: #ffffff00;}
