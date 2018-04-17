@@ -28,6 +28,7 @@ color:#FFFFFF;
 
 #navigation li:hover {background-color: #1b1000bd;
         text-decoration: none;
+        float:middle;
 
 }
 
@@ -78,4 +79,13 @@ text-decoration: aqua}
 
 #projectlists td {border: 1px solid #ffffff;
 
+}
+
+
+#leavenow {
+        padding: 2px;
+        text-align: center;
+        vertical-align: middle;
+        float: middle;
+        position: static;
 }
