@@ -51,6 +51,7 @@ function myFunction (a,b,c) {
 document.write(myFunction(1,2,3))
 </script>
 
+<br><br><br>
 
 <h2>
     Excercise 2: Variable Input
@@ -115,23 +116,110 @@ document.write(myFunction(1,2,3))
         Age: <input id="age" type="text"><br>
         Occupation: <input id="occupation" type="text"><br>
     </form>
+    <button type="button" onclick=newChar()>Submit</button>
 
     
 <script>
-    var person2 = {
-        FormData.name = document.getElementById("name").value;
-        FormData.age = document.getElementById("age").value;
-        FormData.occupation = document.getElementById("job").value;
+    function newChar() {
+        var person2 = {
+            name:document.getElementById("name").value,
+            age:document.getElementById("age").value,
+            occupation:document.getElementById("occupation").value
+        }
+        console.log(person2);
+    }
+    
 
-    function NewChar(){
+    /*function NewChar(){
         return "New person " + (person2.name) + " has been added. " + "They are "
          + (person2.age) + " years old and" +
         " work as a " + (person2.occupation)
-    }
+    }*/
 
-    }
    </script>
+<br><br><br>
 
-   <button type="button"
-   onclick=alert(NewChar())>Submit</button>
+<h2>Strings and String Methods</h2>
+
+<b><p>String 1:Create a variable with " He said my name is Elliott" " as the value, and display it</b></p>
+
+<script>
+    var elliott=" He said \"My name is Elliott\" "
+    document.write(elliott)
+   
+</script>
+
+<br>
+
+<p><b>
+    Convert to uppercase and display it
+</b></p>
+<script>
+        var elliott=" He said \"My name is Elliott\" " //Convert to Uppercase
+        elliott=elliott.toUpperCase();
+        document.write(elliott)
+       
+    </script>
+
+    <br><br><br>
+
+<p>
+    <b>
+        String 2: Concatenate a String and a Number together and output the result
+    </b>
+</p>
+
+<script>
+    var x = 15;
+    var y = new String("Jimmy");
+
+
+
+    document.write(x==y)
+</script>
+
+
+<br><br><br>
+
+<h2>
+    Arrays 1 / Strings 3
+</h2>
+
+<p><b>Create an array with 3 strings inside of it and output</b></p>
+
+<script>
+    var array1 = new Array(" Mazda" , " Ford" , " Ferrari");
+
+    document.write(array1);
+</script>
+
+<p><b>Add another string to your array and output</b></p>
+
+<script>
+    array1.push(" Lamborghini")
+
+    document.write(array1);
+</script>
+
+<p><b>Remove the last string and output again</b></p>
+
+<script>
+    array1.pop();
+
+    document.write(array1);
+</script>
+
+<br><br><br>
+
+<h2>Conditionals 1</h2>
+
+<p><b>Using conditional statements, create a function that checks if your
+    person object is between 20-40 years old, then output if that fact is true or not.
+</b></p>
+
+<script>
+    function Whatisage(){
+        
+    }
+</script>
 </html>
