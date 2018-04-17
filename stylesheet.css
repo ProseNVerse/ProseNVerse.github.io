@@ -22,7 +22,8 @@ color:#FFFFFF;
         text-align: center;
         vertical-align: middle;
         float: left;
-        width: 25%;
+        width: 10%;
+        border: 1px solid powderblue;
 }
 
 #navigation li:hover {background-color: #1b1000bd;
@@ -37,16 +38,19 @@ text-align: right;
 
 }
 
-#info {padding: 5px;
+#info {padding: 15px;
+        color: #FFFFFF;
 }
 
 #info li {display:table;
+        color: #ffffff;
 text-align: center;
-vertical-align: middle;
-float: middle;
+vertical-align:middle;
+float: left;
 width: 33.3333px;}
 
-#info li:hover {background-color: #ffffff00;}
+#info li:hover {background-color: #ffffff00;
+text-decoration: aqua}
 
 #projectlists {
         padding: 2px;
@@ -56,4 +60,13 @@ width: 33.3333px;}
         float: middle;
         background-color: #979797;
         width: 33%;
+}
+
+#footer {
+        padding: 15px;
+        color: aliceblue;
+        text-align: end;
+        vertical-align: right;
+        float: end;
+        position: static;
 }
