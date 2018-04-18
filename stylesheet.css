@@ -7,29 +7,38 @@ html {background-color: black;
         
 }
 
-#navigation {padding: 15px;
+#navigation {padding: px;
         text-align:center;
         vertical-align: middle;
-background-color: #00000091;
+background-color: #000000;
 color:#FFFFFF;
-}
+        border-top-style: groove;
+        border-right-style: solid;
+        border-bottom-style: groove;
+        border-left-style: solid;
+    }
+
 
 #navigation a:link{color:#ffffff;}
 #navigation a:visited {color:#ffffff;}
+#navigation a:hover {color:#dadada}
 
 #navigation li {
         display:table-cell;
         text-align: center;
         vertical-align: middle;
         float: middle;
-        width: 10%;
-        border: 1px solid powderblue;
+        width: 5%;
 }
 
-#navigation li:hover {background-color: #1b1000bd;
+#navigation li:hover {background-color: #888888;
         text-decoration: none;
         float:middle;
+        border:groove;
+        border-spacing: 0px;
+        border-width:0px;
 
+       
 }
 
 #nameplate {padding: 5px;
@@ -67,9 +76,7 @@ text-decoration: aqua}
         padding: 15px;
         color: aliceblue;
         text-align: end;
-        vertical-align: right;
-        float: end;
-        position: static;
+
 }
 
 #projectlists th {

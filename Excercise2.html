@@ -3,9 +3,75 @@
 
 <head><h1>Level 2: Intermediate Javascript</h1></head>
 
+<br><br><br><br>
+
+<h2>Iterations 3: Fizz Buzz</h2>
+
+<br><br>
+
+<p><b>
+    Create a method that prints numbers 1-100 via a for loop. For numbers divisible by 3, 
+    output "Fizz". For numbers divisible by 5: output "Buzz".
+     If the number is divisible by both 3 and 5, output: "FizzBuzz"
+</b></p>
 
 <script>
     
+    for (var i=1; i<101; i++)
+    { 
+        console.log(i);
+        if (i % 5 == 0) if (i % 3 == 0) {
+            console.log(i + " FizzBuzz");
+        }
+       
+        
+         if (i % 3 == 0) {
+            console.log(i + " Fizz");
+        }
+
+        if (i % 5 ==0) {
+            console.log(i + " Buzz");
+
+        }
+
+      
+
+
+    }
+
+</script>
+
+<br><br><br>
+
+<h2>
+    Iterations 4
+</h2>
+
+<br>
+
+<p><b>Create a method that accepts a number, then outputs what it did at each iteration 
+    and how many iterations it took to to get to the end</b></p>
+
+    <br>
+
+    <form id="Number Input">
+            Choose a Number: <input id="number" type="number"><br>
+        </form>
+        <button type="button" onclick=Number()>DIVIDE!</button>
+
+<script>
+
+    function Number() {
+        var i = {
+            number:document.getElementById("number").value
+
+           
+        } 
+        console.log(i);
+}
+
+
+
 </script>
 
 
