@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<h2>Strings 4</h2>
+<br>
+
+<p>Create a function that accepts a string and returns the amount of times a triple (
+    a character appearing three times in a row) exists in that string.
+</p>
+
+<br>
+
+<script>
+    var x = "abcXXXabc";
+    var y = "xxxabyyyycd";
+
+    var z = x.length;
+    var w = y.length;
+
+    document.write("String x = " + x + "<br>")
+    document.write("String y = " + y + "<br><br>")
+
+
+    document.write(z + " is the length of string x<br>")
+    document.write(w + " is the length of string y<br>")
+
+    var pos = x.indexOf("aaa,bbb,ccc,XXX"); 
+    var pos2 = y.indexOf("xxx, aaa, bbb, yyy, ccc, ddd");
+
+    console.log(pos + pos2);
+
+
+
+</script>
+
+
+</html>
