@@ -10,27 +10,38 @@
 <br>
 
 <script>
-    var x = new String("abcXXXabc");
-    var y = new String("xxxabyyyycd");
-
-    var z = x.length;
-    var w = y.length;
+    var x = "abcXXXabc";
+    var y = "xxxabyyyycd";
 
     document.write("String x = " + x + "<br>")
     document.write("String y = " + y + "<br><br>")
+ 
+    var count = 0;
 
 
-    document.write(z + " is the length of string x<br>")
-    document.write(w + " is the length of string y<br>")
+    for (var i = 0; i < x.length; i++) {
+        if (x[i] == x[i+1]) {
+            if (x[i] == x[i+2])  {
+                count++;
+            }
+        }
+    }
 
-    var pos = x.indexOf("aaa,bbb,ccc,XXX"); 
-    var pos2 = y.indexOf("xxx, aaa, bbb, yyy, ccc, ddd");
-
-    for (i = 0; i <= 3; i++);
-
-    console.log(pos + pos2);
+ document.write(x + " has " + count + " triples on its own.<br>");
 
 
+    count = 0;
+
+    for (var i = 0; i < y.length; i++) {
+        if (y[i] == y[i+1]) {
+            if (y[i] == y[i+2])  {
+                count++;
+            }
+        }
+    }
+    console.log(count);
+
+document.write(y + " has " + count + " triples when combined with string x")
 
 </script>
 

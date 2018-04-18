@@ -96,3 +96,7 @@ text-decoration: aqua}
         float: middle;
         position: static;
 }
+
+table {
+        border-collapse: collapse;
+}
