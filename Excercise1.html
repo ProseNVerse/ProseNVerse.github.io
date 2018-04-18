@@ -234,17 +234,32 @@ if (person.age >=20, person.age<=40){
 
 <p><b>
     Create a 'for' loop that increments from 1 to 10, outputting the current iteration at
-    each step
+    each step: Check Console Log
 </b></p>
 
 <script>
-    var g
-    var inc = [0,1,2,3,4,5,6,7,8,9];
-    var text = "";
-    for (g=1; g >= 1; g++) {
-        text += "Current iteration:" + g + "<br>";
-    }
 
-    document.write(g);
+for (var i=1; i<11; i++) {
+    console.log(i);
+}
+
+</script>
+
+<br><br><br>
+
+<h2>Iteration 2</h2>
+<p><b>Create a conditional statement inside a loop body. Have it check the current iteration.
+    If the current iteration is divisible by 2, it is outputted. Otherwise, 
+    nothing gets output. Check console log.
+</b></p>
+
+<br><br>
+
+<script>
+    for (var i=1; i<11; i++) {
+        if (i % 2 == 0) {
+            console.log(i);
+        }
+    }
 </script>
 </html>
