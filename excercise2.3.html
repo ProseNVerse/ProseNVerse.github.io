@@ -10,8 +10,8 @@
 <br>
 
 <script>
-    var x = "abcXXXabc";
-    var y = "xxxabyyyycd";
+    var x = new String("abcXXXabc");
+    var y = new String("xxxabyyyycd");
 
     var z = x.length;
     var w = y.length;
@@ -25,6 +25,8 @@
 
     var pos = x.indexOf("aaa,bbb,ccc,XXX"); 
     var pos2 = y.indexOf("xxx, aaa, bbb, yyy, ccc, ddd");
+
+    for (i = 0; i <= 3; i++);
 
     console.log(pos + pos2);
 
