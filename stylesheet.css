@@ -1,9 +1,10 @@
 @CHARSET "ISO-8859-1";
 
 html {background-color: black;
-        background-image: url("environ.jpg");
-        background-repeat: no-repeat;
+        background-image: url("killme.gif");
         background-size: cover;
+        background-repeat: space;
+       
         
 }
 
