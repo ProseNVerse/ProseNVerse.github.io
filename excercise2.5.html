@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+
+    <a href='Projects.html'>Return</a>
 <head>
+  
     <h2>JSON 1</h2>
     <br>
 </head>
@@ -17,6 +20,7 @@
         </body>
 
 <script>
+  "use strict";
 
     let myJSON = {
   "squadName" : "Super hero squad",
@@ -24,8 +28,7 @@
   "formed" : 2016,
   "secretBase" : "Super tower",
   "active" : true,
-  "members" : [
-    {
+  "members" : [{
       "name" : "Molecule Man",
       "age" : 29,
       "secretIdentity" : "Dan Jukes",
@@ -34,8 +37,7 @@
         "Turning tiny",
         "Radiation blast"
       ]
-    },
-    {
+    }, {
       "name" : "Madame Uppercut",
       "age" : 39,
       "secretIdentity" : "Jane Wilson",
@@ -44,8 +46,7 @@
         "Damage resistance",
         "Superhuman reflexes"
       ]
-    },
-    {
+    }, {
       "name" : "Eternal Flame",
       "age" : 1000000,
       "secretIdentity" : "Unknown",
@@ -60,10 +61,7 @@
   ]
 };
 
-let newObj = JSON.stringify(myJSON);
-localStorage.setItem("testJSON", newObj);
-
-document.getElementById("this").innerHTML = newObj.name;
+document.getElementById(myJSON).innerHTML = myJSON.squadName;
 
 </script>
 
