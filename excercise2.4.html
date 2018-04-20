@@ -11,23 +11,41 @@
 <br>
 <br>
 
-<textarea id = "help2"></textarea>
 <button type="button" id="buttonhelp" onClick = "createpara()">Create Paragraph</button>
 
-<p id = "help"></p>
-<script>
-    function createpara(){
-        document.getElementById("help2").innerHTML = "<p>Why tho</p>";
-        document.getElementById("help3").innerHTML;
+<Br>
 
+    <button type ="button" id= "buttonEdit" onclick = "editPara()">Edit the Paragraph</button>
+    <br>
+    <button type = "button" id = "buttonDelete" onclick = "deletePara()">Delete the Paragraph</button>
+
+
+<script>
+
+    let x = "This is the new paragraph";
+
+    function createpara(){
+
+        document.getElementById("help2").innerHTML = x;
+
+    }
+
+    function editPara(){
+
+        let x = "We're changing what's in the paragraph."
+        document.getElementById("help2").innerHTML = x;
+    }
+
+
+    function deletePara(){
+
+        document.getElementById("help2").innerHTML = null;
     }
 </script>
 
 <br>
 
-
-<textarea id = "help3"></textarea>
-
+<p id = "help2"></p>
 </script>
 
 <p><a href="excercise2.3.html">Previous Page</a></p>
