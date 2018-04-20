@@ -17,51 +17,30 @@
 <p id = "this"></p>
 
 
+<button type ="button" id = " display" onClick="dispJSON()">This Is What Sam Told Me To Do</button>
+
         </body>
 
 <script>
-  "use strict";
 
-    let myJSON = {
-  "squadName" : "Super hero squad",
-  "homeTown" : "Metro City",
-  "formed" : 2016,
-  "secretBase" : "Super tower",
-  "active" : true,
-  "members" : [{
-      "name" : "Molecule Man",
-      "age" : 29,
-      "secretIdentity" : "Dan Jukes",
-      "powers" : [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
-      ]
-    }, {
-      "name" : "Madame Uppercut",
-      "age" : 39,
-      "secretIdentity" : "Jane Wilson",
-      "powers" : [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ]
-    }, {
-      "name" : "Eternal Flame",
-      "age" : 1000000,
-      "secretIdentity" : "Unknown",
-      "powers" : [
-        "Immortality",
-        "Heat Immunity",
-        "Inferno",
-        "Teleportation",
-        "Interdimensional travel"
-      ]
-    }
-  ]
-};
 
-document.getElementById(myJSON).innerHTML = myJSON.squadName;
+  function getJSON(url) {
+    let httpreq = XMLHttpRequest();
+    httpreq.open("GET",url,false);
+    httpreq.send(null);
+    return httpreq.responseText;
+  }
+
+  function dispJSON() {
+    let url = "https://raw.githubusercontent.com/ewomackQA/JSONDataRepo/master/example.json";
+    let json_obj = getJSON(url);
+
+  
+  }
+
+
+
+
 
 </script>
 

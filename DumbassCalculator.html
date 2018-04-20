@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+
+        <style>
+           h1{
+               font-family: 'Franklin Gothic Medium';
+               font-size: 50px;
+               color:rgb(0, 0, 0);
+            }
+            h2
+            {
+                color: rgb(0, 0, 0);
+            }
+            p{
+                color:rgb(0, 0, 0);
+            }
+            li{
+                font-family: 'Franklin Gothic Medium';
+                font-size: 15px;
+            } 
+
+            html{
+                background-color: aliceblue;
+
+            }
+        </style>
+        
+    <header>
+        <h1>Welcome to our most amazing Calculator. We hope you enjoy your time.</h1>
+    </header>
+    <body>
+
+    
+        <form>
+                First Number<br><input id="number1" input type="number"><br>
+                Second Number<br><input id="number2" input type="number"><br>
+        </form>
+        <script> 
+        
+       
+            function gimmemore(){
+                var a = document.getElementById("number1").value 
+                var b = document.getElementById("number2").value
+
+                var a = parseInt(a);
+                var b = parseInt(b);
+                
+                if ((isNaN(a)==true) && (isNaN(b)==true)){
+                    console.log("Don't Be a Dick");
+                }
+                else if ((Number.isInteger(a)==true) && (Number.isInteger(b)==true))
+                {
+                
+                console.log(a + b);
+                document.getElementById("Answer").value= a + " plus " + b + " is " + (a + b);
+                }
+            }
+
+             function gimmeless(){
+                var a = document.getElementById("number1").value 
+                var b = document.getElementById("number2").value
+
+                var a = parseInt(a);
+                var b = parseInt(b);
+                
+                console.log(a - b);
+                document.getElementById("Answer").value= a + " minus " + b + " is " + (a - b);
+            }
+            function gimmesome(){
+                var a = document.getElementById("number1").value 
+                var b = document.getElementById("number2").value
+
+                var a = parseInt(a);
+                var b = parseInt(b);
+                
+                console.log(a / b);
+                document.getElementById("Answer").value= a + " divided by " + b + " is " + (a / b);
+            }
+            function gimmethatandmore(){
+                var a = document.getElementById("number1").value 
+                var b = document.getElementById("number2").value
+
+                var a = parseInt(a);
+                var b = parseInt(b);
+                
+                console.log(a * b);
+                document.getElementById("Answer").value= a + " times " + b + " is " + (a * b);
+            }
+
+          
+            
+        </script>
+        <br><br>
+
+        <button type="button" id="add" onClick=gimmemore()>Add</button>
+        <button type="button" id="subtract" onClick=gimmeless()>Subtract</button>
+        <button type="button" id="divide" onClick=gimmesome()>Divide</button>
+        <button type="button" id="multiply" onClick=gimmethatandmore()>Multiply</button>
+       
+    </body>
+    <br><br><br>
+    <footer>
+
+        <textarea id="Answer">
+            
+        </textarea>
+        <script>
+        
+        </script>
+        
+    </footer>
+</html>

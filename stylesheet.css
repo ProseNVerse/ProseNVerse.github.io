@@ -53,7 +53,8 @@ text-align: right;
         color: #FFFFFF;
 }
 
-#info li {display:table;
+#info li {padding: 60px;
+        display:table;
         color: #ffffff;
 text-align: center;
 vertical-align:middle;
@@ -100,4 +101,8 @@ text-decoration: aqua}
 
 table {
         border-collapse: collapse;
+}
+
+#information{
+        color: aliceblue;
 }
